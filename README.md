@@ -4,7 +4,7 @@ Official Privacy Policy for the **Ouch** mobile application (`com.everydayapp`).
 
 - **Live URL:** [https://arts95.github.io/ouch-privacy-policy/](https://arts95.github.io/ouch-privacy-policy/)
 - **Effective Date:** October 11, 2026
-- **Contact:** [andreevart95@gmail.com](mailto:andreevart95@gmail.com)
+- **Contact:** [art9ua@gmail.com](mailto:art9ua@gmail.com)
 
 ---
 
