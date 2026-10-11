@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Ouch</title>
+  <style>
+    :root {
+      --bg-primary: #0f172a;
+      --bg-card: #1e293b;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0284c7;
+      --border: #334155;
+      --highlight-bg: #0f2744;
+      --highlight-border: #1d4ed8;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg-primary: #f8fafc;
+        --bg-card: #ffffff;
+        --text-primary: #0f172a;
+        --text-secondary: #475569;
+        --accent: #0284c7;
+        --accent-hover: #0369a1;
+        --border: #e2e8f0;
+        --highlight-bg: #f0f9ff;
+        --highlight-border: #bae6fd;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.65;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 40px;
+      text-align: center;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--highlight-bg);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    .card-callout {
+      background: var(--highlight-bg);
+      border-left: 4px solid var(--accent);
+      padding: 18px 22px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 16px 0 8px;
+      color: var(--text-primary);
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: var(--text-secondary);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: var(--text-primary);
+    }
+
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 14px;
+      color: var(--text-secondary);
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    a:hover {
+      color: var(--accent-hover);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 25px;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    code {
+      background: rgba(148, 163, 184, 0.15);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">Legal Document</div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle"><strong>Application:</strong> Ouch (<code>com.everydayapp</code>) &bull; <strong>Effective Date:</strong> October 11, 2026</p>
+    </header>
+
+    <div class="card">
+      <h2>1. Overview</h2>
+      <p>
+        This Privacy Policy explains how <strong>Ouch</strong> (hereinafter referred to as "the Application", "we", "us", or "our") collects, uses, and safeguards information when you use our mobile application on Android and iOS devices.
+      </p>
+      <p>
+        <strong>Ouch</strong> is designed with a strict <strong>privacy-first and local-first architecture</strong>. Your personal financial entries, vehicle records, and tracking logs belong exclusively to you. We do not sell your personal data, operate proprietary user-tracking databases, or monitor your personal finances.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>2. Information We Access and Process</h2>
+      <p>The Application processes the following categories of data to provide its core features:</p>
+      
+      <h3>A. Financial & Transaction Data</h3>
+      <ul>
+        <li><strong>User-Entered Data:</strong> Income and expense transaction records, categories, descriptions, amounts, timestamps, and payment accounts that you choose to enter.</li>
+        <li><strong>Bank Sync (Optional):</strong> If you configure a direct bank integration (e.g., Monobank API personal token), the Application fetches your recent transaction statements directly from the bank's servers to your device. API tokens and credentials are encrypted and stored solely in on-device hardware storage (<code>SecureStore</code>).</li>
+      </ul>
+
+      <h3>B. Vehicle & EV Charging Data</h3>
+      <ul>
+        <li><strong>Logs & Analytics:</strong> Odometer readings, trip distances, and charging logs (kilowatt-hours, charging durations, and associated costs).</li>
+        <li><strong>Local Charger Integrations (Optional):</strong> Local network IP addresses and Wi-Fi charger credentials entered by you to pull charging statistics directly over your local Wi-Fi network.</li>
+      </ul>
+
+      <h3>C. Google Account Data (Optional Cloud Sync)</h3>
+      <p>
+        If you choose to use the optional Google Drive / Google Sheets synchronization feature:
+      </p>
+      <ul>
+        <li><strong>Account Identity:</strong> Your Google user name, email address, and profile identifier for authentication and account association.</li>
+        <li><strong>Google Drive & Sheets Access:</strong> The Application requests access to create, update, and manage a dedicated spreadsheet in your personal Google Drive (<code>drive.file</code> and <code>spreadsheets</code> scopes) to mirror your expense and vehicle logs for your own backup and viewing convenience.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. Google API Services User Data Policy Compliance</h2>
+      <div class="card-callout">
+        <p>
+          Ouch's use and transfer to any other app of information received from Google APIs will adhere to the 
+          <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>, 
+          including the <strong>Limited Use</strong> requirements.
+        </p>
+      </div>
+      <p>Specifically, regarding data accessed through Google APIs:</p>
+      <ul>
+        <li><strong>No External Transfers:</strong> We do not transfer, distribute, or share Google user data to any external third parties or servers, except when directly syncing data to your personal Google account at your request.</li>
+        <li><strong>No Advertising:</strong> We never use or disclose Google user data for serving personalized, retargeted, or interest-based advertisements.</li>
+        <li><strong>No AI Model Training:</strong> We do not use Google user data to train machine learning models or artificial intelligence algorithms.</li>
+        <li><strong>Limited Internal Access:</strong> Neither we nor any staff access or inspect your synchronized Google Sheets data without your explicit prior permission for technical support.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>4. Data Storage and Security</h2>
+      <ul>
+        <li><strong>Local-First Storage:</strong> All your financial transactions, vehicle logs, and settings are saved locally on your device using encrypted and secure operating system storage mechanisms.</li>
+        <li><strong>Encrypted Tokens:</strong> Sensitive credentials (such as bank integration tokens and OAuth authentication tokens) are stored in your device's secure hardware enclave (via <code>SecureStore</code>).</li>
+        <li><strong>Direct Connections:</strong> All API requests (such as fetching bank statements or updating Google Sheets) are made directly from your device to the respective provider's official encrypted HTTPS endpoints. No intermediate proxy or relay server is used.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>5. Third-Party Services</h2>
+      <p>The Application interacts with the following third-party services only when you explicitly enable them:</p>
+      <ul>
+        <li>
+          <strong>Google Play Services & Google Drive API:</strong> Used for optional Google Sign-In and Google Sheets synchronization. Subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
+        </li>
+        <li>
+          <strong>Monobank Open API (Optional):</strong> Used if you configure automatic personal statement synchronization. Subject to <a href="https://www.monobank.ua/" target="_blank" rel="noopener noreferrer">Monobank Terms & Privacy</a>.
+        </li>
+      </ul>
+      <p>We do not integrate any third-party advertising SDKs, data brokers, or behavioral analytics libraries.</p>
+    </div>
+
+    <div class="card">
+      <h2>6. Data Retention and Deletion (Your Rights)</h2>
+      <p>Because your data resides on your device and in your personal cloud accounts, you retain complete control over your data at all times:</p>
+      <ul>
+        <li><strong>Deleting Local Data:</strong> You can wipe all local transactions, logs, and tokens at any time through the in-app settings or by clearing the Application's storage / uninstalling the app from your device.</li>
+        <li><strong>Deleting Cloud Backups:</strong> You can delete the synced spreadsheet directly from your Google Drive account at any time.</li>
+        <li><strong>Revoking Google Access:</strong> You can revoke Ouch's access to your Google account at any time by visiting <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google Account Security Permissions</a>.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>7. Children's Privacy</h2>
+      <p>
+        The Application is not directed toward children under the age of 13 (or under 16 in the European Economic Area). We do not knowingly collect personal information from children.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>8. Changes to This Privacy Policy</h2>
+      <p>
+        We may update our Privacy Policy periodically to reflect changes in our practices or applicable legal requirements. The latest version will always be available on this page with an updated "Effective Date".
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>9. Contact Us</h2>
+      <p>
+        If you have any questions, concerns, or requests regarding this Privacy Policy or your data privacy, please contact:
+      </p>
+      <ul>
+        <li><strong>Developer:</strong> Arsenii Andrieiev</li>
+        <li><strong>Email:</strong> <a href="mailto:andreevart95@gmail.com">andreevart95@gmail.com</a></li>
+        <li><strong>Application:</strong> Ouch (Package: <code>com.everydayapp</code>)</li>
+        <li><strong>Repository:</strong> <a href="https://github.com/arts95/ouch-privacy-policy" target="_blank" rel="noopener noreferrer">github.com/arts95/ouch-privacy-policy</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Ouch. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
